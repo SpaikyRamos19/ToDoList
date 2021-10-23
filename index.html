@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link href="/Semantic-UI-CSS-master/semantic.min.css" rel = "stylesheet" >
+    <script src = "/Semantic-UI-CSS-master/semantic.min.js"> </script>
     <link href = "styles.css" rel="stylesheet">
 </head>
 <body>
@@ -16,23 +17,23 @@
         </h1>
      </div>
 
+     <!-- Inicio CajaTexto y Boton -->
      <div>
      <form id="formulario">
         <input id= "textbox" class = "input" type = "text" placeholder = "Add a task...">
-  
         <button class = "botonAdd">
           <i class="plus circle icon"></i>
         </button>
       </form>
     </div>
+    <!-- Final CajaTexto y Boton -->
 
+     <!-- Inicio Tareas -->
       <div id="lista-tareas" class="ui label aviso estilotareas">
         Sin Tareas Pendientes 
         <i class="tasks icon"></i>
       </div>
 
-      <!-- Inicio Tareas -->
-      
       <template id="template">
         <div class="alert alert-warning d-flex justify-content-between align-items-center" style="padding-bottom: 12px;">
             <p style = "text-align: left;">Tarea #1</p>
@@ -42,7 +43,6 @@
             </h3>
         </div>
     </template>
-
     <!-- Final Tareas -->
 
     
@@ -54,8 +54,6 @@
         <div class="bar" id = "barrita"> <span id='nporcentaje'></span></div>
         <div class="progress" id = "ntareas">  </div>   
       </div>
- 
-
       <!-- Final Barra Progreso -->
 
     <!-- Inicio BotonRadio -->
@@ -78,7 +76,5 @@
     <!-- Final BotonRadio -->
   
     <script src = "main.js"></script>
-    <script src = "/Semantic-UI-CSS-master/semantic.min.js"> </script>
-   
 </body>
 </html>
